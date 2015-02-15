@@ -17,7 +17,7 @@ class CreateAccountViewController: UIViewController {
   @IBOutlet weak var chooseUsernameTextField: UITextField!
   @IBOutlet weak var choosePasswordTextField: UITextField!
   @IBOutlet weak var confirmPasswordTextField: UITextField!
-  let delegate: CreateAccountViewControllerDelegate?
+  var delegate: CreateAccountViewControllerDelegate?
   
   let kUserNameKey = "userNameKey"
   let kPasswordKey = "passwordKey"
