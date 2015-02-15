@@ -19,9 +19,6 @@ class CreateAccountViewController: UIViewController {
   @IBOutlet weak var confirmPasswordTextField: UITextField!
   var delegate: CreateAccountViewControllerDelegate?
   
-  let kUserNameKey = "userNameKey"
-  let kPasswordKey = "passwordKey"
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
