@@ -49,7 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="bfY-Hs-2Za" id="9bs-xj-8PM"/>
-                        <outlet property="userNameTextField" destination="wqY-eC-EDG" id="JwE-WM-NWd"/>
+                        <outlet property="usernameTextField" destination="wqY-eC-EDG" id="Tk1-S4-WlK"/>
                         <segue destination="wDv-gf-XhQ" kind="presentation" identifier="loginToCreateAccountSegue" id="K2I-nV-Vs8"/>
                         <segue destination="TfS-r2-tvk" kind="presentation" identifier="loginToMainSegue" id="Rjf-BN-ekX"/>
                     </connections>
