@@ -8,11 +8,16 @@
 
 import UIKit
 
+protocol CreateAccountViewControllerDelegate {
+  func accountCreated()
+}
+
 class CreateAccountViewController: UIViewController {
   
   @IBOutlet weak var chooseUsernameTextField: UITextField!
   @IBOutlet weak var choosePasswordTextField: UITextField!
   @IBOutlet weak var confirmPasswordTextField: UITextField!
+  let delegate: CreateAccountViewControllerDelegate?
   
   let kUserNameKey = "userNameKey"
   let kPasswordKey = "passwordKey"
@@ -36,6 +41,7 @@ class CreateAccountViewController: UIViewController {
       defaults.synchronize()
       
       self.dismissViewControllerAnimated(true, completion: nil)
+      delegate?.accountCreated()
     }
   }
   
