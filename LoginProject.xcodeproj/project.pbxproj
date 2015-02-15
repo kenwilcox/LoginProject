@@ -15,6 +15,7 @@
 		BE051B951A9122D000F146C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE051B941A9122D000F146C6 /* LoginViewController.swift */; };
 		BE051B971A9122F900F146C6 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE051B961A9122F900F146C6 /* CreateAccountViewController.swift */; };
 		BE051B991A91230600F146C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE051B981A91230600F146C6 /* MainViewController.swift */; };
+		BE051B9C1A913F1100F146C6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE051B9A1A913F1100F146C6 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		BE051B941A9122D000F146C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE051B961A9122F900F146C6 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		BE051B981A91230600F146C6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BE051B9A1A913F1100F146C6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BE051B9B1A913F1100F146C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		BE051B661A9121CC00F146C6 = {
 			isa = PBXGroup;
 			children = (
+				BE051B9A1A913F1100F146C6 /* LICENSE */,
+				BE051B9B1A913F1100F146C6 /* README.md */,
 				BE051B711A9121CC00F146C6 /* LoginProject */,
 				BE051B871A9121CC00F146C6 /* LoginProjectTests */,
 				BE051B701A9121CC00F146C6 /* Products */,
@@ -200,6 +205,7 @@
 			files = (
 				BE051B7A1A9121CC00F146C6 /* Main.storyboard in Resources */,
 				BE051B7F1A9121CC00F146C6 /* LaunchScreen.xib in Resources */,
+				BE051B9C1A913F1100F146C6 /* LICENSE in Resources */,
 				BE051B7C1A9121CC00F146C6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
