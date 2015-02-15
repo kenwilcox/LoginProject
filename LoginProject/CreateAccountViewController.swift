@@ -14,6 +14,9 @@ class CreateAccountViewController: UIViewController {
   @IBOutlet weak var choosePasswordTextField: UITextField!
   @IBOutlet weak var confirmPasswordTextField: UITextField!
   
+  let kUserNameKey = "userNameKey"
+  let kPasswordKey = "passwordKey"
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -26,8 +29,17 @@ class CreateAccountViewController: UIViewController {
   }
   
   @IBAction func createAccountButtonPressed(sender: UIButton) {
+    if choosePasswordTextField.text == confirmPasswordTextField.text && !choosePasswordTextField.text.isEmpty {
+      let defaults = NSUserDefaults.standardUserDefaults()
+      defaults.setObject(self.chooseUsernameTextField.text, forKey: kUserNameKey)
+      defaults.setObject(self.choosePasswordTextField.text, forKey: kPasswordKey)
+      defaults.synchronize()
+      
+      self.dismissViewControllerAnimated(true, completion: nil)
+    }
   }
   
   @IBAction func cancelButtonPressed(sender: UIButton) {
+    self.dismissViewControllerAnimated(true, completion: nil)
   }
 }
